@@ -11,6 +11,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() async{
   await init();
+
   runApp(const MyApp());
 }
 

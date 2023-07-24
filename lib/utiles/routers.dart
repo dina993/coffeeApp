@@ -1,3 +1,4 @@
+import 'package:coffee_app/main_screen/main_screen.dart';
 import 'package:coffee_app/splash_screen/splash_screen.dart';
 import 'package:coffee_app/utiles/staticVar.dart';
 import 'package:flutter/cupertino.dart';
@@ -11,6 +12,10 @@ class Routers {
       case SplashScreen.id:
         return MaterialPageRoute(
           builder: (_) => const SplashScreen(),
+        );
+        case MainScreen.id:
+        return MaterialPageRoute(
+          builder: (_) => const MainScreen(),
         );
       default:
         return MaterialPageRoute(

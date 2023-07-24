@@ -5,6 +5,7 @@ import 'package:coffee_app/utiles/colorManger.dart';
 import 'package:coffee_app/widget/button.dart';
 import 'package:coffee_app/widget/custome_text.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -13,7 +14,11 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return AnnotatedRegion<SystemUiOverlayStyle>(
+        value: const SystemUiOverlayStyle(
+        statusBarColor: ColorManager.black20,
+    ),
+    child:Container(
         height: double.infinity,
             decoration: const BoxDecoration(
                 image:
@@ -59,6 +64,6 @@ class SplashScreen extends StatelessWidget {
             ),
     )
       // This trailing comma makes auto-formatting nicer for build methods.
-    ;
+    );
   }
 }

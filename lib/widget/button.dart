@@ -1,7 +1,10 @@
 
 
 
+import 'package:coffee_app/main_screen/main_screen.dart';
 import 'package:coffee_app/utiles/colorManger.dart';
+import 'package:coffee_app/utiles/getIt.dart';
+import 'package:coffee_app/utiles/navigation_services.dart';
 import 'package:coffee_app/utiles/staticVar.dart';
 import 'package:coffee_app/widget/custome_text.dart';
 import 'package:flutter/material.dart';
@@ -33,7 +36,9 @@ class Buttons{
         child:
 
             GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    getIt<NavigationService>().navigateTo(MainScreen.id);
+                  },
                   child: Container(
                     height: 54,
                     padding: const EdgeInsetsDirectional.only(start: 60,top: 15,bottom: 16,end: 43),
