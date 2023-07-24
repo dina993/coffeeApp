@@ -35,6 +35,7 @@ class ColorManager{
   static const Color shimmerBackGroundColor = Color(0xffE0E0E0);
   static const Color red=Color(0xffE00000);
   static const Color red_r1=Color(0xffF53649);
+  static const Color darkBrown=Color(0xFFA26E47);
 
 }
 
